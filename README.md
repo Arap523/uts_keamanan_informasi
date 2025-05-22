@@ -65,14 +65,14 @@ TextInput::make('nama_kendaraan')->required()->maxLength(50)
 - Validasi Laravel mencegah input tidak sah.
 - Blade auto-escape mencegah XSS.
 
-### 🔗 4. Integrity dan Foreign Key
+### 4. Integrity dan Foreign Key
 - Migrasi menggunakan foreign key:
 ```php
 $table->foreignId('kategori_id')->constrained()->onDelete('cascade');
 ```
 - Mencegah orphaned data saat entitas utama dihapus.
 
-### 🛡️ 5. Proteksi Laravel Default
+### 5. Proteksi Laravel Default
 - **CSRF protection** aktif secara default untuk semua form.
 - Tidak ada manipulasi data via URL langsung (akses melalui panel).
 - Tidak menggunakan Mass Assignment (`$fillable` ditentukan).
@@ -81,7 +81,7 @@ $table->foreignId('kategori_id')->constrained()->onDelete('cascade');
 
 
 
-## 🛠 Teknologi
+##  Teknologi
 
 - Laravel 12
 - Filament v3
@@ -91,7 +91,7 @@ $table->foreignId('kategori_id')->constrained()->onDelete('cascade');
 
 ---
 
-## 📂 Struktur Panel Admin
+##  Struktur Panel Admin
 
 - `/admin/kendaraan` – Kelola kendaraan, relasi ke kategori & pemilik
 - `/admin/kategori` – Kelola daftar kategori kendaraan
