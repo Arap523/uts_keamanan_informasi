@@ -15,6 +15,9 @@ return new class extends Migration
              $table->id();
     $table->foreignId('kendaraan_id')->constrained();
     $table->string('penyewa');
+    $table->string('no_ktp');
+    $table->string('no_sim');
+     $table->string('alamat');
     $table->date('tanggal_sewa');
     $table->date('tanggal_kembali')->nullable();
     $table->timestamps();

@@ -33,7 +33,19 @@ class PenyewaanResource extends Resource
                 ->required(),
             TextInput::make('penyewa')
                     ->required()
-                    ->label('Nama_Penyewa'),
+                    ->label('Nama Penyewa'),
+            
+            TextInput::make('no_ktp')
+                    ->required()
+                    ->label('No KTP'),
+
+            TextInput::make('no_sim')
+                    ->required()
+                    ->label('No SIM'),
+
+            TextInput::make('alamat')
+                    ->required()
+                    ->label('Alamat Penyewa'),
 
             DatePicker::make('tanggal_sewa')
                 ->required(),
@@ -49,6 +61,9 @@ class PenyewaanResource extends Resource
             ->columns([
                 TextColumn::make('kendaraan.nama_kendaraan'),
                 TextColumn::make('penyewa'),
+                TextColumn::make('no_ktp'),
+                TextColumn::make('no_sim'),
+                TextColumn::make('alamat'),
                 TextColumn::make('tanggal_sewa'),
                 TextColumn::make('tanggal_kembali'),
             ])

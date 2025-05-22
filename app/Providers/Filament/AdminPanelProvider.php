@@ -17,7 +17,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use BezhanSalleh\FilamentShield\FilamentShieldPlugin; // Pastikan ini ada di atas
+use BezhanSalleh\FilamentShield\FilamentShieldPlugin; 
 
 class AdminPanelProvider extends PanelProvider
 {
